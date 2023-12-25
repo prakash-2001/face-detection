@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            <title>Index</title>
+        </title>
+        <style>
+            .workspace{
+                position: absolute;
+                width: 99%;
+                height: 81.5%;
+                background-color: rgb(215, 209, 226);
+                margin-left: 0%;
+                margin-top: 4.5%;
+                border-radius: 2px 2px 2px 2px;
+               
+            }
+
+            .header{
+                margin-top: 2%;
+                font-size: 30px;
+                font-weight: bold;
+                text-align: left;
+            }
+            .workspace .btn{
+                text-align: center;
+                margin-left: 0%;
+                margin-top: 7%;
+            }
+            button{
+                width: 200px;
+                height: 50px;
+                border-radius: 10px 10px 10px 10px;
+                border-color: rgb(67, 12, 247);
+                color: rgb(255, 255, 255);
+                font-size: large;
+                background-color: rgba(19, 196, 57, 0.73);
+                border-width: 3px;
+            }
+            .button1{
+                width: 200px;
+                height: 50px;
+                border-radius: 10px 10px 10px 10px;
+                border-color: rgb(67, 12, 247);
+                color: rgb(255, 255, 255);
+                font-size: large;
+                background-color: rgba(213, 33, 33, 0.73);
+                border-width: 3px;
+            }
+            .button1:hover{
+                border-color: rgb(13, 13, 203);
+                background-color: rgb(255, 0, 0);
+            }
+            button:hover{
+                border-color: rgb(13, 13, 203);
+                background-color: rgb(0, 255, 81);
+            }
+            label{
+                font-size: large;
+                font-weight: bold;
+            }
+            .workspace .footer{
+                margin-left: 0cm;
+                margin-top: 25%;
+            }
+            .footer{
+                background-color: rgb(11, 11, 53);
+                color: white;
+                border-radius: 3px 3px 3px 3px;
+            }
+            footer{
+                margin-left: 2%;
+                padding-top: 0.5%;
+                padding-bottom: 0.5%;
+            }
+          
+        </style>   
+    </head>
+    <body>
+        
+        {% include "header.html"%}
+        <div class="workspace">
+            <div class="header">
+                <header style="text-align: center;">
+                    DETECT THE FACES IN FRAME
+                </header>
+            </div>    
+            <div class="btn">
+                <form action="/run_prg" method="post">
+                <label>Start Detection:  </label>
+                    <button type="submit">START</button>
+                </form>
+            </div>
+            <div class="footer">
+                <footer>
+                    @GECM Hassan Team no:15<br>
+                    Team members:<br>
+                    PRAKASH G (4HG20CS016),
+                    H M MANURAJA (4HG21CS407),
+                    VINAY A (4HG20CS032),
+                    SACHIN T P (4HG20CS021),
+                    DARSHAN N B (4HG21CS406)
+                </footer>
+            </div>
+        </div>     
+    </body>
+</html>
